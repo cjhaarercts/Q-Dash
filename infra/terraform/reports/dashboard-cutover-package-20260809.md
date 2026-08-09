@@ -10,7 +10,7 @@
 
 ## 2. Dashboard Access
 
-- Dashboard URL: `pending-arcgis-online-url`
+- Dashboard URL: `https://experience.arcgis.com/experience/cb7187d831294c3281edb73fe1d40ad5`
 - Event scope: `event_id` required
 - Audience: leadership and operations watchers
 
@@ -57,6 +57,5 @@
 
 ## 9. Open Items
 
-- Provide final ArcGIS Online dashboard URL.
 - Confirm approver identity.
 - Add callback latency evidence (`callbackSyncLatencySeconds` or CloudWatch trace timestamps).
