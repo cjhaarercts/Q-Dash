@@ -34,6 +34,12 @@ Run the full dashboard validation suite and generate evidence artifacts:
 npm run dashboard:validate-functional -- --summary infra/terraform/reports/dashboard-summary-sample-response.json --hazard infra/terraform/reports/dashboard-hazard-comparison-sample-response.json --drilldown infra/terraform/reports/dashboard-drilldown-trace-sample-response.json --callback-latency-seconds 900
 ```
 
+Check release cutover readiness (cutover package completeness, evidence files, clean git state, and release tag):
+
+```powershell
+npm run dashboard:cutover:ready -- v0.2.0
+```
+
 ## Strict Verification Profile
 
 - `infra/terraform/run-strict-verify.ps1` wraps `deploy-verify.ps1` with `-StrictHazardSmoke` enabled and writes a deterministic report path by environment.

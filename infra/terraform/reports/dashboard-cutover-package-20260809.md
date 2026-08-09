@@ -57,4 +57,4 @@
 
 ## 9. Open Items
 
-- Confirm approver identity.
+- None.
