@@ -21,6 +21,7 @@ In scope:
 - Heat map metric toggle, bucket, and drill-down rules from `arcgis-dashboard-heatmap-wiring-spec.md`.
 - Hazard comparison modes and overlap/provisional rules from `arcgis-dashboard-hazard-comparison-spec.md`.
 - Drill-down table and notification trace panel rules from `arcgis-dashboard-drilldown-trace-spec.md`.
+- Functional validation process and evidence outputs from `arcgis-dashboard-functional-validation-runbook.md`.
 
 Out of scope:
 

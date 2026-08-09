@@ -20,6 +20,7 @@
     "dashboard:validate-heatmap": "node tools/validateHeatMap.js",
     "dashboard:validate-hazard-comparison": "node tools/validateHazardComparison.js",
     "dashboard:validate-drilldown-trace": "node tools/validateDrilldownTrace.js",
+    "dashboard:validate-functional": "node tools/runDashboardFunctionalValidation.js",
     "verify:strict:dev": "pwsh -File infra/terraform/run-strict-verify.ps1 -Environment dev -SkipBootstrap -SkipTests -SkipApply",
     "verify:strict:test": "pwsh -File infra/terraform/run-strict-verify.ps1 -Environment test -SkipBootstrap -SkipTests -SkipApply",
     "verify:strict:prod": "pwsh -File infra/terraform/run-strict-verify.ps1 -Environment prod -SkipBootstrap -SkipTests -SkipApply"

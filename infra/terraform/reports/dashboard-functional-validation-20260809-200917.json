@@ -1,0 +1,93 @@
+{
+  "generatedAtUtc": "2026-08-09T20:09:17.370Z",
+  "overallStatus": "pass-with-open-items",
+  "inputs": {
+    "summary": "infra/terraform/reports/dashboard-summary-sample-response.json",
+    "hazard": "infra/terraform/reports/dashboard-hazard-comparison-sample-response.json",
+    "drilldown": "infra/terraform/reports/dashboard-drilldown-trace-sample-response.json",
+    "callbackLatencySeconds": 900
+  },
+  "validatorResults": [
+    {
+      "name": "contract-summary",
+      "payload": "infra/terraform/reports/dashboard-summary-sample-response.json",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "Leadership contract validation passed.",
+      "stderr": ""
+    },
+    {
+      "name": "summary-cards",
+      "payload": "infra/terraform/reports/dashboard-summary-sample-response.json",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "Summary card values:\n{\n  \"potentiallyAffectedMembers\": 2400,\n  \"reportedMembers\": 1980,\n  \"activeHazardsCount\": 2,\n  \"activeNotifications\": 3,\n  \"impactedDistrictsCount\": 2,\n  \"overlapDistrictsCount\": 1,\n  \"unaccountedFor\": 47,\n  \"needingHelp\": 12,\n  \"needingHelpContacted\": 9,\n  \"confidenceState\": \"reported\",\n  \"generatedAtUtc\": \"2026-08-09T14:00:00Z\"\n}\nDistrict aggregate totals:\n{\n  \"unaccountedFor\": 47,\n  \"needingHelp\": 12,\n  \"needingHelpContacted\": 9\n}\noverlapDeconflicted: true\nSummary card validation passed.",
+      "stderr": ""
+    },
+    {
+      "name": "heat-map",
+      "payload": "infra/terraform/reports/dashboard-summary-sample-response.json",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "Heat map summary:\n{\n  \"metric\": \"unaccountedFor\",\n  \"bucketCount\": 4,\n  \"districtValueCount\": 2,\n  \"overlapDeconflicted\": true\n}\nHeat map validation passed.",
+      "stderr": ""
+    },
+    {
+      "name": "contract-hazard",
+      "payload": "infra/terraform/reports/dashboard-hazard-comparison-sample-response.json",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "Leadership contract validation passed.",
+      "stderr": ""
+    },
+    {
+      "name": "hazard-comparison",
+      "payload": "infra/terraform/reports/dashboard-hazard-comparison-sample-response.json",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "Hazard comparison summary:\n{\n  \"selectedHazards\": 2,\n  \"comparisonHazards\": 2,\n  \"rawSums\": {\n    \"unaccountedFor\": 57,\n    \"needingHelp\": 15,\n    \"needingHelpContacted\": 11\n  },\n  \"combined\": {\n    \"unaccountedFor\": 47,\n    \"needingHelp\": 12,\n    \"needingHelpContacted\": 9\n  },\n  \"overlapDeconflicted\": true\n}\nHazard comparison validation passed.",
+      "stderr": ""
+    },
+    {
+      "name": "contract-drilldown",
+      "payload": "infra/terraform/reports/dashboard-drilldown-trace-sample-response.json",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "Leadership contract validation passed.",
+      "stderr": ""
+    },
+    {
+      "name": "drilldown-trace",
+      "payload": "infra/terraform/reports/dashboard-drilldown-trace-sample-response.json",
+      "passed": true,
+      "exitCode": 0,
+      "stdout": "Drill-down and trace summary:\n{\n  \"districtRows\": 2,\n  \"traceRows\": 2\n}\nDrill-down/trace validation passed.",
+      "stderr": ""
+    }
+  ],
+  "acceptanceChecks": [
+    {
+      "name": "Event totals reconcile with district totals after deconfliction",
+      "status": "pass",
+      "details": "Summary reconciliation validator passed."
+    },
+    {
+      "name": "Multi-hazard totals stay within raw sums unless overlap warning rules apply",
+      "status": "pass",
+      "details": "Hazard comparison validator passed."
+    },
+    {
+      "name": "Callback-driven Everbridge updates appear in drill-down within expected latency",
+      "status": "needs-manual-verification",
+      "details": "No notificationTrace.callbackSyncLatencySeconds values were provided."
+    },
+    {
+      "name": "Drill-down and trace linkage consistency",
+      "status": "pass",
+      "details": "Drill-down and trace validator passed."
+    }
+  ],
+  "defects": [
+    "Open item: Callback-driven Everbridge updates appear in drill-down within expected latency (No notificationTrace.callbackSyncLatencySeconds values were provided.)"
+  ]
+}
