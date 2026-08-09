@@ -6,7 +6,7 @@
 - Environment: `prod`
 - Release date (UTC): `2026-08-09T20:12:00Z`
 - Prepared by: `automation`
-- Approved by: `pending`
+- Approved by: `Chris Haarer BC-QEL National Q-Directorate`
 
 ## 2. Dashboard Access
 
