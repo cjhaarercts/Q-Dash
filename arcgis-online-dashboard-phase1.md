@@ -17,6 +17,7 @@ In scope:
 - Leadership visualization contract implementation from `integration-api-contracts.md` section 5.
 - Required filters and interaction rules from `planning-overview.md` and `operational-observability.md`.
 - Concrete filter wiring and validation map from `arcgis-dashboard-filter-wiring-spec.md`.
+- Summary card field bindings and reconciliation rules from `arcgis-dashboard-summary-card-binding-spec.md`.
 
 Out of scope:
 
@@ -26,9 +27,11 @@ Out of scope:
 ## Build Sequence
 
 1. Data contract readiness check
+
 - Validate contract fields exist and are queryable for a known active event.
 
-2. Filter foundation
+1. Filter foundation
+
 - Configure required global selectors:
   - event_id (required)
   - hazard (multi-select)
@@ -36,19 +39,24 @@ Out of scope:
   - confidence state
   - time window
 
-3. Leadership summary row
+1. Leadership summary row
+
 - Build and bind who/what/where/how-many cards.
 
-4. Heat map and interaction wiring
+1. Heat map and interaction wiring
+
 - Implement district polygons, bucket legend, metric toggle, and click-to-drill behavior.
 
-5. Hazard comparison
+1. Hazard comparison
+
 - Implement combined deconflicted vs per-hazard views with overlap risk messaging.
 
-6. Drill-down and trace panel
+1. Drill-down and trace panel
+
 - Add district detail table and linked notification context.
 
-7. Validation and publish
+1. Validation and publish
+
 - Run acceptance checks and publish cutover package.
 
 ## Ticket Set (Execution Ready)

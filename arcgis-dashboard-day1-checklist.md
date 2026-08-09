@@ -18,6 +18,7 @@ Complete Phase 1 startup tasks:
 - `planning-overview.md` (dashboard layout and interaction rules)
 - `operational-observability.md` (filter and validation behavior)
 - `arcgis-dashboard-filter-wiring-spec.md` (DSH-02 selector and widget wiring map)
+- `arcgis-dashboard-summary-card-binding-spec.md` (DSH-03 card bindings and reconciliation rules)
 
 ## Task 1: DSH-01 Data Contract Readiness
 
@@ -75,6 +76,8 @@ Exit criteria:
    - needingHelpContacted
 2. Validate card values against district-level totals for selected event.
 3. Confirm confidence context is visible and understandable in row presentation.
+4. Run local reconciliation validator:
+   - `npm run dashboard:validate-summary-cards -- <path-to-response-json>`
 
 Exit criteria:
 
