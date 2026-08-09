@@ -26,6 +26,14 @@ This workspace now includes a minimal implementation scaffold for the AWS-hosted
 - `pwsh -File infra/terraform/watch-rollup.ps1` summarizes checkpoint results for the active watch window.
 - `terraform validate` can be run inside `infra/terraform` after Terraform is installed and the provider plugins are initialized.
 
+### Rerun All Dashboard Validations
+
+Run the full dashboard validation suite and generate evidence artifacts:
+
+```powershell
+npm run dashboard:validate-functional -- --summary infra/terraform/reports/dashboard-summary-sample-response.json --hazard infra/terraform/reports/dashboard-hazard-comparison-sample-response.json --drilldown infra/terraform/reports/dashboard-drilldown-trace-sample-response.json --callback-latency-seconds 900
+```
+
 ## Strict Verification Profile
 
 - `infra/terraform/run-strict-verify.ps1` wraps `deploy-verify.ps1` with `-StrictHazardSmoke` enabled and writes a deterministic report path by environment.
