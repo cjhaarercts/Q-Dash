@@ -22,6 +22,7 @@ In scope:
 - Hazard comparison modes and overlap/provisional rules from `arcgis-dashboard-hazard-comparison-spec.md`.
 - Drill-down table and notification trace panel rules from `arcgis-dashboard-drilldown-trace-spec.md`.
 - Functional validation process and evidence outputs from `arcgis-dashboard-functional-validation-runbook.md`.
+- Release handoff package template from `arcgis-dashboard-cutover-package.md`.
 
 Out of scope:
 
