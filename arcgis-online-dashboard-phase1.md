@@ -20,6 +20,7 @@ In scope:
 - Summary card field bindings and reconciliation rules from `arcgis-dashboard-summary-card-binding-spec.md`.
 - Heat map metric toggle, bucket, and drill-down rules from `arcgis-dashboard-heatmap-wiring-spec.md`.
 - Hazard comparison modes and overlap/provisional rules from `arcgis-dashboard-hazard-comparison-spec.md`.
+- Drill-down table and notification trace panel rules from `arcgis-dashboard-drilldown-trace-spec.md`.
 
 Out of scope:
 
