@@ -262,11 +262,13 @@ function main() {
   const now = new Date();
   const generatedAtUtc = now.toISOString();
   const token = timestampToken(now);
+  const hasFailures = defects.some(
+    (d) => d.startsWith("Validator failed") || d.startsWith("Acceptance check failed")
+  );
+  const hasOpenItems = defects.some((d) => d.startsWith("Open item:"));
   const report = {
     generatedAtUtc,
-    overallStatus: defects.some((d) => d.startsWith("Validator failed") || d.startsWith("Acceptance check failed"))
-      ? "fail"
-      : "pass-with-open-items",
+    overallStatus: hasFailures ? "fail" : hasOpenItems ? "pass-with-open-items" : "pass",
     inputs: {
       summary: path.relative(process.cwd(), summaryPath).replace(/\\/g, "/"),
       hazard: path.relative(process.cwd(), hazardPath).replace(/\\/g, "/"),

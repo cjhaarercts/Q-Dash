@@ -52,10 +52,9 @@
 
 ## 8. Validation Evidence
 
-- `infra/terraform/reports/dashboard-functional-validation-20260809-200917.json`
-- `infra/terraform/reports/dashboard-functional-validation-20260809-200917.md`
+- `infra/terraform/reports/dashboard-functional-validation-20260809-201402.json`
+- `infra/terraform/reports/dashboard-functional-validation-20260809-201402.md`
 
 ## 9. Open Items
 
 - Confirm approver identity.
-- Add callback latency evidence (`callbackSyncLatencySeconds` or CloudWatch trace timestamps).
