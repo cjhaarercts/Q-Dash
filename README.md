@@ -22,6 +22,8 @@ This workspace now includes a minimal implementation scaffold for the AWS-hosted
 - `npm run tf:validate` validates the Terraform configuration from the repo root.
 - `npm run tf:plan:dev`, `npm run tf:plan:test`, and `npm run tf:plan:prod` run Terraform plans against the environment example overlays.
 - `npm run verify:strict:dev`, `npm run verify:strict:test`, and `npm run verify:strict:prod` run the strict deploy verification wrapper with environment-specific report names.
+- `pwsh -File infra/terraform/watch-checkpoint.ps1` captures a timestamped post-promotion watch checkpoint (alarms, dashboards, and selected prod logs).
+- `pwsh -File infra/terraform/watch-rollup.ps1` summarizes checkpoint results for the active watch window.
 - `terraform validate` can be run inside `infra/terraform` after Terraform is installed and the provider plugins are initialized.
 
 ## Strict Verification Profile

@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-08-09T19:12:15.9488819Z",
+  "watch_directory": "C:\\Websites\\Q Dash\\infra\\terraform\\reports\\watch-20260809-190813",
+  "window_hours": 24,
+  "checkpoints_in_window": 1,
+  "latest_checkpoint_utc": "2026-08-09T19:12:10.387749Z",
+  "latest_test_alarm_state_count": 0,
+  "latest_test_insufficient_data_count": 0,
+  "latest_prod_alarm_state_count": 0,
+  "latest_prod_insufficient_data_count": 0,
+  "any_test_alarm_during_window": false,
+  "any_prod_alarm_during_window": false
+}

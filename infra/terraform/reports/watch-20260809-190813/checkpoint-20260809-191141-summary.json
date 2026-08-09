@@ -1,0 +1,22 @@
+{
+  "checkpoint_utc": "2026-08-09T19:12:10.3877490Z",
+  "watch_directory": "C:\\Websites\\Q Dash\\infra\\terraform\\reports\\watch-20260809-190813",
+  "region": "us-west-2",
+  "application": "sitrep-int",
+  "log_since": "120m",
+  "test_metric_alarm_count": 4,
+  "test_alarm_state_count": 0,
+  "test_insufficient_data_count": 0,
+  "test_alarm_names_in_alarm": [],
+  "prod_metric_alarm_count": 5,
+  "prod_alarm_state_count": 0,
+  "prod_insufficient_data_count": 0,
+  "prod_alarm_names_in_alarm": [],
+  "test_alarms_file": "C:\\Websites\\Q Dash\\infra\\terraform\\reports\\watch-20260809-190813\\checkpoint-20260809-191141-alarms-test.json",
+  "prod_alarms_file": "C:\\Websites\\Q Dash\\infra\\terraform\\reports\\watch-20260809-190813\\checkpoint-20260809-191141-alarms-prod.json",
+  "test_dashboard_file": "C:\\Websites\\Q Dash\\infra\\terraform\\reports\\watch-20260809-190813\\checkpoint-20260809-191141-dashboard-test.json",
+  "prod_dashboard_file": "C:\\Websites\\Q Dash\\infra\\terraform\\reports\\watch-20260809-190813\\checkpoint-20260809-191141-dashboard-prod.json",
+  "prod_callback_logs_file": "C:\\Websites\\Q Dash\\infra\\terraform\\reports\\watch-20260809-190813\\checkpoint-20260809-191141-prod-everbridge-callback.log",
+  "prod_everbridge_poller_logs_file": "C:\\Websites\\Q Dash\\infra\\terraform\\reports\\watch-20260809-190813\\checkpoint-20260809-191141-prod-everbridge-poller.log",
+  "prod_hazard_poller_logs_file": "C:\\Websites\\Q Dash\\infra\\terraform\\reports\\watch-20260809-190813\\checkpoint-20260809-191141-prod-hazard-feed-poller.log"
+}
