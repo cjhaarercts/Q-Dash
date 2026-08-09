@@ -70,6 +70,13 @@ function parseOpenItems(text) {
   return items;
 }
 
+function normalizeOpenItems(items) {
+  return items.filter((item) => {
+    const normalized = item.toLowerCase().replace(/[.\s]+$/g, "");
+    return normalized !== "none";
+  });
+}
+
 function main() {
   const releaseTag = process.argv[2] || "v0.2.0";
   const issues = [];
@@ -106,7 +113,7 @@ function main() {
     }
   });
 
-  const openItems = parseOpenItems(cutoverText);
+  const openItems = normalizeOpenItems(parseOpenItems(cutoverText));
   if (openItems.length > 0) {
     issues.push(`Cutover package still has ${openItems.length} open item(s).`);
   }
