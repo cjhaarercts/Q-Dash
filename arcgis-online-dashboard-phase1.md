@@ -18,6 +18,7 @@ In scope:
 - Required filters and interaction rules from `planning-overview.md` and `operational-observability.md`.
 - Concrete filter wiring and validation map from `arcgis-dashboard-filter-wiring-spec.md`.
 - Summary card field bindings and reconciliation rules from `arcgis-dashboard-summary-card-binding-spec.md`.
+- Heat map metric toggle, bucket, and drill-down rules from `arcgis-dashboard-heatmap-wiring-spec.md`.
 
 Out of scope:
 
