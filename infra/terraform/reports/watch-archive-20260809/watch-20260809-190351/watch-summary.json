@@ -1,0 +1,11 @@
+{
+  "generated_utc": "2026-08-09T19:04:08.1911116Z",
+  "region": "us-west-2",
+  "test_metric_alarm_count": 4,
+  "test_alarm_state_count": 0,
+  "test_insufficient_data_count": 0,
+  "prod_metric_alarm_count": 5,
+  "prod_alarm_state_count": 0,
+  "prod_insufficient_data_count": 0,
+  "output_dir": "infra/terraform/reports/watch-20260809-190351"
+}
