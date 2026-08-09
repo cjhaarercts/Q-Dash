@@ -17,6 +17,7 @@ Complete Phase 1 startup tasks:
 - `integration-api-contracts.md` (section 5 leadership visualization contract)
 - `planning-overview.md` (dashboard layout and interaction rules)
 - `operational-observability.md` (filter and validation behavior)
+- `arcgis-dashboard-filter-wiring-spec.md` (DSH-02 selector and widget wiring map)
 
 ## Task 1: DSH-01 Data Contract Readiness
 

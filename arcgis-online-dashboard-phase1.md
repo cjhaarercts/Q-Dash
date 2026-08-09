@@ -16,6 +16,7 @@ In scope:
 - Dashboard assembly in ArcGIS Online using existing promoted test/prod data sources.
 - Leadership visualization contract implementation from `integration-api-contracts.md` section 5.
 - Required filters and interaction rules from `planning-overview.md` and `operational-observability.md`.
+- Concrete filter wiring and validation map from `arcgis-dashboard-filter-wiring-spec.md`.
 
 Out of scope:
 
