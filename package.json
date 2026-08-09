@@ -15,6 +15,7 @@
     "tf:plan:dev": "terraform -chdir=infra/terraform plan -var-file=terraform.tfvars.dev.example",
     "tf:plan:test": "terraform -chdir=infra/terraform plan -var-file=terraform.tfvars.test.example",
     "tf:plan:prod": "terraform -chdir=infra/terraform plan -var-file=terraform.tfvars.prod.example",
+    "dashboard:validate-contract": "node tools/validateLeadershipContract.js",
     "verify:strict:dev": "pwsh -File infra/terraform/run-strict-verify.ps1 -Environment dev -SkipBootstrap -SkipTests -SkipApply",
     "verify:strict:test": "pwsh -File infra/terraform/run-strict-verify.ps1 -Environment test -SkipBootstrap -SkipTests -SkipApply",
     "verify:strict:prod": "pwsh -File infra/terraform/run-strict-verify.ps1 -Environment prod -SkipBootstrap -SkipTests -SkipApply"

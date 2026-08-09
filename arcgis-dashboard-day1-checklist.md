@@ -34,6 +34,8 @@ Complete Phase 1 startup tasks:
    - heatMap with buckets and districtValues
    - districtDetails with source and notification IDs
 5. Capture one validated payload sample and save under reports for traceability.
+6. Validate the payload sample with the local contract checker:
+   - `npm run dashboard:validate-contract -- <path-to-response-json>`
 
 Exit criteria:
 
