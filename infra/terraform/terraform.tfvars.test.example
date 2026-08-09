@@ -1,0 +1,13 @@
+environment                   = "test"
+aws_region                    = "us-east-1"
+arcgis_runtime_secret_arn     = "arn:aws:secretsmanager:us-east-1:123456789012:secret:/sitrep-int/test/arcgis/runtime"
+everbridge_polling_secret_arn = "arn:aws:secretsmanager:us-east-1:123456789012:secret:/sitrep-int/test/everbridge/polling"
+everbridge_draft_secret_arn   = "arn:aws:secretsmanager:us-east-1:123456789012:secret:/sitrep-int/test/everbridge/draft"
+arcgis_webhook_secret_arn     = "arn:aws:secretsmanager:us-east-1:123456789012:secret:/sitrep-int/test/webhooks/arcgis"
+everbridge_webhook_secret_arn = "arn:aws:secretsmanager:us-east-1:123456789012:secret:/sitrep-int/test/webhooks/everbridge"
+alarm_notification_topic_arns = ["arn:aws:sns:us-east-1:123456789012:sitrep-int-test-ops"]
+operational_alarm_overrides = {
+  everbridge_callback_duplicate_suppression = {
+    threshold = 2
+  }
+}

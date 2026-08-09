@@ -1,0 +1,61 @@
+list_name,name,label
+yes_no,yes,Yes
+yes_no,no,No
+district,d1,D1
+district,d5,D5
+district,d7,D7
+district,d8,D8
+district,d9,D9
+district,d11,D11
+district,d13,D13
+district,d14,D14
+district,d17,D17
+event_type,hurricane_tropical,Hurricane/Typhoon/Tropical
+event_type,flood,Flood
+event_type,severe_weather,Severe Weather
+event_type,wildfire,Wildfire
+event_type,earthquake,Earthquake
+event_type,tsunami,Tsunami
+event_type,volcanic_activity,Volcanic Activity
+event_type,spill_national_significance,Spill of National Significance
+event_type,public_health,Public Health
+event_type,cyber_communications,Cyber/Communications
+event_type,exercise,Exercise
+event_type,other,Other
+report_type,initial,Initial
+report_type,update,Update
+report_type,significant_change,Significant Change
+report_type,final,Final
+event_status,monitoring_preimpact,Monitoring/Pre-Impact
+event_status,active_response,Active Response
+event_status,stabilization,Stabilization
+event_status,recovery_postimpact,Recovery/Post-Impact
+event_status,closed,Closed
+district_posture,normal,Normal
+district_posture,elevated_monitoring,Elevated Monitoring
+district_posture,partial_activation,Partial Activation
+district_posture,full_activation,Full Activation
+eb_activation_purpose,accountability,Accountability
+eb_activation_purpose,notification,Notification
+eb_activation_purpose,recall,Recall
+eb_activation_purpose,exercise,Exercise
+eb_activation_purpose,other,Other
+requested_priority,routine,Routine
+requested_priority,high,High
+requested_priority,urgent,Urgent
+request_status,open,Open
+request_status,sourcing,Sourcing
+request_status,assigned,Assigned
+request_status,fulfilled,Fulfilled
+request_status,cancelled,Cancelled
+service_status,normal,Normal
+service_status,degraded,Degraded
+service_status,unavailable,Unavailable
+command_post_status,not_activated,Not activated
+command_post_status,active,Active
+command_post_status,degraded,Degraded
+command_post_status,relocated,Relocated
+document_type,sitrep,SITREP
+document_type,attachment,Attachment
+document_type,map,Map
+document_type,other,Other

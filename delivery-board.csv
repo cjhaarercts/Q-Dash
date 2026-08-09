@@ -1,0 +1,48 @@
+Workstream,Story ID,Summary,Owner,Supporting Owner,Estimate Weeks,Priority,Release,Dependencies,Status
+Governance,1.1,Approve system-of-record boundaries,Product owner,Data governance lead,1,High,Release 1,None,Ready
+Governance,1.2,Confirm Everbridge tenant capabilities,Everbridge lead,Integration lead,1,High,Release 1,None,Ready
+Governance,1.3,Define national event ID standard,Product owner,ArcGIS lead,1,High,Release 1,1.1,Ready
+Data Model,2.1,Define incident identity fields,ArcGIS lead,Product owner,0.5,High,Release 1,1.3,Ready
+Data Model,2.2,Define report lifecycle fields,ArcGIS lead,Product owner,0.5,High,Release 1,1.3,Ready
+Data Model,2.3,Define member accountability and impact fields,ArcGIS lead,Data governance lead,0.5,High,Release 1,1.1,Ready
+Data Model,2.4,Define resource availability and request fields,ArcGIS lead,Product owner,0.5,High,Release 1,2.1|2.2,Ready
+Data Model,2.5,Define facility communications and narrative fields,ArcGIS lead,Product owner,0.5,Medium,Release 1,2.1|2.2,Ready
+Survey123,3.1,Rebuild form structure,ArcGIS lead,Product owner,1,High,Release 1,2.1|2.2|2.3|2.4|2.5,Ready
+Survey123,3.2,Implement conditional logic,ArcGIS lead,Product owner,0.5,High,Release 1,3.1,Ready
+Survey123,3.3,Implement validation and calculations,ArcGIS lead,Product owner,0.5,High,Release 1,3.1,Ready
+Survey123,3.4,Publish and test revised form,ArcGIS lead,Test coordinator,1,High,Release 1,3.2|3.3,Blocked by environment
+ArcGIS,4.1,Update SITREP hosted feature layer schema,ArcGIS lead,Integration lead,1,High,Release 1,3.1,Ready
+ArcGIS,4.2,Create Everbridge notification related table,ArcGIS lead,Integration lead,0.5,High,Release 1,4.1,Ready
+ArcGIS,4.3,Add integration-control fields,ArcGIS lead,Integration lead,0.5,High,Release 1,4.1,Ready
+ArcGIS,4.4,Rebuild dashboard for event-centric reporting,ArcGIS lead,Product owner,1,High,Release 1,4.1|4.2|4.3,Ready
+ArcGIS,4.5,Validate multi-district event aggregation,Test coordinator,ArcGIS lead,0.5,Medium,Release 1,4.4,Ready
+AWS,8.1,Provision AWS environment,Integration lead,Cloud platform owner,1,High,Release 2,1.2,Ready
+AWS,8.2,Implement secrets and IAM controls,Integration lead,Cloud platform owner,0.5,High,Release 2,8.1,Ready
+AWS,5.1,Build secure Everbridge polling client,Integration lead,Everbridge lead,1,High,Release 2,8.1|8.2,Ready
+AWS,5.2,Implement Everbridge callback receiver if available,Integration lead,Everbridge lead,0.5,Medium,Release 2,8.1|8.2,Conditional
+AWS,5.3,Map Everbridge aggregates to ArcGIS related table,Integration lead,ArcGIS lead,1,High,Release 2,5.1|4.2,Ready
+AWS,5.4,Implement event correlation and exception handling,Integration lead,ArcGIS lead,1,High,Release 2,5.1|5.3,Ready
+AWS,8.3,Add monitoring and alarms,Integration lead,Cloud platform owner,0.5,Medium,Release 2,5.1|5.3|5.4,Ready
+AWS,8.4,Add audit logging,Integration lead,Cloud platform owner,0.5,Medium,Release 2,5.1|5.3|5.4,Ready
+Dashboard,5.5,Add Everbridge accountability dashboard panel,ArcGIS lead,Integration lead,0.5,Medium,Release 2,5.3,Ready
+Automation,6.1,Define approved outbound trigger conditions,Product owner,Everbridge lead,0.5,High,Release 3,5.4,Ready
+Automation,6.2,Build Survey123 and feature-layer webhook receiver,Integration lead,ArcGIS lead,0.5,High,Release 3,8.1|8.2,Ready
+Automation,6.3,Implement draft message template mapping,Integration lead,Everbridge lead,0.5,High,Release 3,6.1,Ready
+Automation,6.4,Create Everbridge draft workflow,Integration lead,Everbridge lead,1,High,Release 3,6.2|6.3,Ready
+Automation,6.5,Record approval status back in ArcGIS,Integration lead,ArcGIS lead,0.5,Medium,Release 3,6.4|4.3,Ready
+Feeds,7.1,Select pilot hazard feeds,Product owner,ArcGIS lead,0.5,Medium,Release 4,4.4,Ready
+Feeds,7.2,Implement geospatial relevance rules,Integration lead,ArcGIS lead,1,Medium,Release 4,7.1|8.1,Ready
+Feeds,7.3,Implement severity and expiration rules,Integration lead,Product owner,0.5,Medium,Release 4,7.1,Ready
+Feeds,7.4,Implement feed deduplication,Integration lead,Cloud platform owner,0.5,Medium,Release 4,7.2|7.3,Ready
+Testing,10.1,Run tabletop validation,Test coordinator,Product owner,0.5,Medium,Release 4,4.4|5.5|6.5,Ready
+Testing,10.2,Run functional exercise,Test coordinator,All leads,1,High,Release 4,10.1|7.4,Ready
+Testing,10.3,Resolve critical defects,All leads,Product owner,1,High,Release 4,10.2,Ready
+Testing,10.4,Prepare production rollout and training,Product owner,Test coordinator,0.5,Medium,Release 4,10.3,Ready
+Leadership Dashboard,9.1,Define leadership who what where how-many model,Product owner,ArcGIS lead,0.5,High,Release 2,2.3|4.4,Ready
+Leadership Dashboard,9.2,Extend SitRep ingestion schema for accountability and contact state,Integration lead,ArcGIS lead,1,High,Release 2,9.1|4.1|4.2,Ready
+Leadership Dashboard,9.3,Build event-district roll-up and drill-down views,ArcGIS lead,Integration lead,1,High,Release 3,9.2|4.4|5.3,Ready
+Leadership Dashboard,9.4,Correlate ArcGIS hazards with Everbridge potential impact,Integration lead,ArcGIS lead,1,High,Release 3,7.2|5.1|9.2,Ready
+Leadership Dashboard,9.5,Implement confidence lifecycle for impact numbers,Integration lead,Product owner,0.5,Medium,Release 3,9.2|9.4,Ready
+Leadership Dashboard,9.6,Add leadership briefing export and API contract,Integration lead,Product owner,0.5,Medium,Release 3,9.3|9.5,Ready
+Leadership Dashboard,9.7,Add district impact heat map visualization,ArcGIS lead,Integration lead,1,High,Release 3,9.3|9.5,Ready
+Leadership Dashboard,9.8,Support simultaneous multi-hazard selection and comparison,ArcGIS lead,Integration lead,0.5,High,Release 3,9.4|9.7,Ready

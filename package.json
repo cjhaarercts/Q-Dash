@@ -1,0 +1,25 @@
+{
+  "name": "sitrep-integration-service",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AWS integration scaffold for ArcGIS SITREP and Everbridge synchronization.",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.840.0",
+    "@aws-sdk/client-secrets-manager": "^3.840.0"
+  },
+  "scripts": {
+    "lint": "node --check src/lib/config.js && node --check src/lib/logger.js && node --check src/lib/response.js && node --check src/lib/eventParser.js && node --check src/lib/security.js && node --check src/lib/arcgisNormalization.js && node --check src/lib/ruleEngine.js && node --check src/lib/secrets.js && node --check src/lib/stateStore.js && node --check src/lib/draftMapping.js && node --check src/lib/arcgisMapping.js && node --check src/lib/everbridgeMapping.js && node --check src/lib/http.js && node --check src/lib/geospatial.js && node --check src/lib/arcgisClient.js && node --check src/lib/everbridgeClient.js && node --check src/handlers/arcgisWebhookHandler.js && node --check src/handlers/everbridgeCallbackHandler.js && node --check src/handlers/everbridgePoller.js && node --check src/handlers/hazardFeedPoller.js && node --check src/handlers/rulesEvaluator.js && node --check src/handlers/arcgisWriter.js && node --check src/handlers/everbridgeDraftCreator.js",
+    "check": "npm run lint",
+    "test": "node --test tests/**/*.test.js",
+    "tf:validate": "terraform -chdir=infra/terraform validate",
+    "tf:plan:dev": "terraform -chdir=infra/terraform plan -var-file=terraform.tfvars.dev.example",
+    "tf:plan:test": "terraform -chdir=infra/terraform plan -var-file=terraform.tfvars.test.example",
+    "tf:plan:prod": "terraform -chdir=infra/terraform plan -var-file=terraform.tfvars.prod.example",
+    "verify:strict:dev": "pwsh -File infra/terraform/run-strict-verify.ps1 -Environment dev -SkipBootstrap -SkipTests -SkipApply",
+    "verify:strict:test": "pwsh -File infra/terraform/run-strict-verify.ps1 -Environment test -SkipBootstrap -SkipTests -SkipApply",
+    "verify:strict:prod": "pwsh -File infra/terraform/run-strict-verify.ps1 -Environment prod -SkipBootstrap -SkipTests -SkipApply"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

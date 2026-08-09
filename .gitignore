@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+infra/terraform/secrets/**/*.json
+!infra/terraform/secrets/**/*.example.json
+.env
+tmp-*.json
+infra/terraform/reports/*.csv

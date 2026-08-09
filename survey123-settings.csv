@@ -1,0 +1,2 @@
+form_title,form_id,instance_name,version,submission_url,default_language
+District Emergency Management SITREP,district_emergency_management_sitrep,concat(${event_id}, ' - SITREP ', ${sitrep_number}),2026.08.06,,English
