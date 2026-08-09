@@ -1,0 +1,141 @@
+{
+  "eventId": "2026-HUR-04",
+  "generatedAtUtc": "2026-08-09T15:00:00Z",
+  "whoWhatWhereHowMany": {
+    "who": {
+      "potentiallyAffectedMembers": 2400,
+      "reportedMembers": 1980
+    },
+    "what": {
+      "hazards": ["hurricane", "flood"],
+      "activeNotifications": 3
+    },
+    "where": {
+      "districts": ["D7", "D8"],
+      "overlapDistricts": ["D7"]
+    },
+    "howMany": {
+      "unaccountedFor": 47,
+      "needingHelp": 12,
+      "needingHelpContacted": 9
+    }
+  },
+  "confidence": {
+    "state": "reported",
+    "sourceMix": {
+      "hazard_inferred": 1,
+      "sitrep_confirmed": 2,
+      "everbridge_confirmed": 1
+    }
+  },
+  "heatMap": {
+    "metric": "unaccountedFor",
+    "buckets": [
+      { "label": "0", "min": 0, "max": 0 },
+      { "label": "1-5", "min": 1, "max": 5 },
+      { "label": "6-20", "min": 6, "max": 20 },
+      { "label": "21+", "min": 21, "max": 999999 }
+    ],
+    "districtValues": [
+      {
+        "district": "D7",
+        "hazards": ["hurricane", "flood"],
+        "counts": {
+          "unaccountedFor": 33,
+          "needingHelp": 10,
+          "needingHelpContacted": 7
+        },
+        "confidenceState": "reported",
+        "overlapRisk": "high"
+      },
+      {
+        "district": "D8",
+        "hazards": ["hurricane"],
+        "counts": {
+          "unaccountedFor": 14,
+          "needingHelp": 2,
+          "needingHelpContacted": 2
+        },
+        "confidenceState": "reported",
+        "overlapRisk": "low"
+      }
+    ]
+  },
+  "districtDetails": [
+    {
+      "district": "D7",
+      "eventId": "2026-HUR-04",
+      "hazards": ["hurricane", "flood"],
+      "latestUpdateUtc": "2026-08-09T13:54:00Z",
+      "source": "SitRep",
+      "everbridgeNotificationIds": ["2666867063786182"],
+      "counts": {
+        "unaccountedFor": 33,
+        "needingHelp": 10,
+        "needingHelpContacted": 7
+      },
+      "drillDown": {
+        "recordCount": 5,
+        "confidenceState": "reported",
+        "provenance": ["hazard-inferred", "sitrep-confirmed"]
+      }
+    },
+    {
+      "district": "D8",
+      "eventId": "2026-HUR-04",
+      "hazards": ["hurricane"],
+      "latestUpdateUtc": "2026-08-09T13:55:30Z",
+      "source": "Everbridge",
+      "everbridgeNotificationIds": ["2666867063786183"],
+      "counts": {
+        "unaccountedFor": 14,
+        "needingHelp": 2,
+        "needingHelpContacted": 2
+      },
+      "drillDown": {
+        "recordCount": 4,
+        "confidenceState": "reported",
+        "provenance": ["sitrep-confirmed", "everbridge-confirmed"]
+      }
+    }
+  ],
+  "deduplication": {
+    "overlapDeconflicted": true,
+    "overlapMethod": "member-id-unique-count",
+    "doubleCountRisk": "low"
+  },
+  "hazardComparison": {
+    "combined": {
+      "mode": "combined",
+      "counts": {
+        "unaccountedFor": 47,
+        "needingHelp": 12,
+        "needingHelpContacted": 9
+      }
+    },
+    "perHazard": [
+      {
+        "hazard": "hurricane",
+        "counts": {
+          "unaccountedFor": 39,
+          "needingHelp": 10,
+          "needingHelpContacted": 8
+        }
+      },
+      {
+        "hazard": "flood",
+        "counts": {
+          "unaccountedFor": 18,
+          "needingHelp": 5,
+          "needingHelpContacted": 3
+        }
+      }
+    ],
+    "overlapWarning": {
+      "visible": true,
+      "provisional": false,
+      "risk": "low",
+      "message": "Overlap deconflicted totals are shown."
+    }
+  }
+}

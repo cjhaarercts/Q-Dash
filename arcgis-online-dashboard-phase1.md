@@ -19,6 +19,7 @@ In scope:
 - Concrete filter wiring and validation map from `arcgis-dashboard-filter-wiring-spec.md`.
 - Summary card field bindings and reconciliation rules from `arcgis-dashboard-summary-card-binding-spec.md`.
 - Heat map metric toggle, bucket, and drill-down rules from `arcgis-dashboard-heatmap-wiring-spec.md`.
+- Hazard comparison modes and overlap/provisional rules from `arcgis-dashboard-hazard-comparison-spec.md`.
 
 Out of scope:
 
