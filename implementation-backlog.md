@@ -382,6 +382,104 @@ Acceptance criteria:
 
 - User guide, operator guide, and support contacts are published.
 
+## Epic 11. ArcGIS Online Dashboard Build (Phase 1 Execution)
+
+### Story 11.1: Publish leadership visualization backing view
+
+Description:
+
+Publish and validate the data view that satisfies the leadership visualization contract for who/what/where/how-many.
+
+Acceptance criteria:
+
+- Backing view returns event-level totals and district-level detail in one request path.
+- Contract fields in `integration-api-contracts.md` section 5 are populated for a known active event.
+- Output includes confidence and overlap metadata required by dashboard widgets.
+
+### Story 11.2: Configure global dashboard filters
+
+Description:
+
+Implement ArcGIS Dashboard selectors and filter actions for event, district, hazard, confidence state, and time window.
+
+Acceptance criteria:
+
+- `event_id` selector is required before detail widgets render values.
+- Hazard selector supports at least two concurrent hazard selections.
+- Filter propagation updates summary cards, map, comparison, and detail table consistently.
+
+### Story 11.3: Build leadership summary card row
+
+Description:
+
+Create the top row that answers who/what/where/how-many for leadership briefings.
+
+Acceptance criteria:
+
+- Cards show potentially affected members, active hazards/notifications, impacted districts, and key accountability counts.
+- Card values reconcile with district roll-ups after deconfliction.
+- Confidence-state context is visible in the row.
+
+### Story 11.4: Build district heat map widget
+
+Description:
+
+Implement district polygon map with metric toggle and stable bucket legend.
+
+Acceptance criteria:
+
+- Map supports metric toggle for unaccounted, needing help, and contacted-for-help.
+- Bucket legend remains fixed (`0`, `1-5`, `6-20`, `21+`).
+- District selection drives drill-down filtering.
+
+### Story 11.5: Build hazard comparison panel
+
+Description:
+
+Implement combined vs per-hazard comparison and overlap warning behavior.
+
+Acceptance criteria:
+
+- Panel supports combined deconflicted and per-hazard display modes.
+- Overlap-risk indicators are visible when hazards intersect.
+- Provisional labeling appears when deconfliction status is unknown.
+
+### Story 11.6: Build district drill-down and trace panel
+
+Description:
+
+Deliver district-level detail table and linked notification trace context.
+
+Acceptance criteria:
+
+- Table includes district, event, hazard list, accountability counts, confidence state, timestamp, source, and notification IDs.
+- Selecting a district updates the trace panel with latest source and notification linkage.
+- Drill-down respects all global filters.
+
+### Story 11.7: Validate dashboard behavior against operator runbook checks
+
+Description:
+
+Execute the functional validation checks defined for leadership and operations workflows.
+
+Acceptance criteria:
+
+- Event totals reconcile with district totals after deconfliction.
+- Multi-hazard totals never exceed raw sum without explicit overlap warning.
+- Callback-driven Everbridge updates appear in drill-down within expected latency.
+
+### Story 11.8: Publish dashboard cutover package
+
+Description:
+
+Prepare and publish the Phase 1 dashboard handoff package for operations.
+
+Acceptance criteria:
+
+- Includes dashboard URL, data sources, filter definitions, and known constraints.
+- Includes operator quick checks and escalation instructions.
+- Package is linked from runbook/planning docs.
+
 ## Suggested Release Plan
 
 ### Release 1

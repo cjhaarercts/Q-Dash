@@ -22,6 +22,7 @@
 - `operator-runbook.md`: operational guidance for SITREP submitters, coordinators, and Everbridge operators.
 - `operational-observability.md`: operator-facing classification of automation metrics, alarms, dashboards, and escalation posture.
 - `aws-observability-verification-runbook.md`: deployment and post-deploy verification steps for dashboards, metric filters, alarms, and Logs Insights queries.
+- `arcgis-online-dashboard-phase1.md`: execution-ready Phase 1 ArcGIS Online dashboard build plan and ticket set.
 
 ## Recommended Reading Order
 
