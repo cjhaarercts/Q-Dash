@@ -1,0 +1,17 @@
+{
+  "generatedAtUtc": "2026-08-10T17:52:46.4085980Z",
+  "releaseTag": "v0.2.2",
+  "cutoverPackage": ".\\infra\\terraform\\reports\\dashboard-cutover-package-20260809.md",
+  "operatorPacket": ".\\infra\\terraform\\reports\\dashboard-operator-publish-packet-20260810-175246.md",
+  "functionalEvidence": {
+    "json": ".\\infra\\terraform\\reports\\dashboard-functional-validation-20260810-175245.json",
+    "markdown": ".\\infra\\terraform\\reports\\dashboard-functional-validation-20260810-175245.md"
+  },
+  "liveUrlCheck": {
+    "url": "https://experience.arcgis.com/experience/cb7187d831294c3281edb73fe1d40ad5",
+    "statusCode": 200,
+    "ok": true,
+    "title": "Experience"
+  },
+  "overallStatus": "pass"
+}

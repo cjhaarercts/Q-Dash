@@ -37,7 +37,13 @@ npm run dashboard:validate-functional -- --summary infra/terraform/reports/dashb
 Check release cutover readiness (cutover package completeness, evidence files, clean git state, and release tag):
 
 ```powershell
-npm run dashboard:cutover:ready -- v0.2.0
+npm run dashboard:cutover:ready -- v0.2.2
+```
+
+Run the hybrid release flow (preflight, functional validation, operator packet, post-publish URL check):
+
+```powershell
+npm run dashboard:release:hybrid -- -ReleaseTag v0.2.2
 ```
 
 ## Strict Verification Profile
